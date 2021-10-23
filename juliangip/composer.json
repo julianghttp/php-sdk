@@ -1,0 +1,20 @@
+{
+  "name": "juliangip/php-sdk",
+  "description": "巨量HTTP代理php版本SDK",
+  "keywords": [
+    "juliang",
+    "http proxy"
+  ],
+  "homepage": "https://www.juliangip.com/",
+  "type": "library",
+  "license": "MIT",
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "juliang\\": "src"
+    }
+  },
+  "require": {
+    "php": ">=7.0.0"
+  }
+}

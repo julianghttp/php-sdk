@@ -11,9 +11,9 @@ use juliang\api\Dynamic;
 
 /**
  * 声明独享代理对象
- * trade_no和key请填写您的实际业务编号和key
+ * trade_no、num、key请填写您的实际业务编号和key
  */
-$dynamicClient = new Dynamic("1135123858735679", 1, "eb9887f7421e4b71bfe040a5025b55e7");
+$dynamicClient = new Dynamic("",10 , "");
 
 
 /**
@@ -93,11 +93,11 @@ $getIpsParams = [
  * 获取代理IP剩余可用时长
  * 返回值格式为：Json
  */
-$remainParams = [
-    'proxy'   =>  "120.11.149.170:35194,110.244.145.107:55628"
-];
-$remainResult = $dynamicClient->action($dynamicClient::GET_PROXY_REMAIN, $remainParams);
-var_dump($remainResult);
+//$remainParams = [
+//    'proxy'   =>  "120.11.149.170:35194,110.244.145.107:55628"
+//];
+//$remainResult = $dynamicClient->action($dynamicClient::GET_PROXY_REMAIN, $remainParams);
+//var_dump($remainResult);
 
 /**
  * 获取业务剩余可提取IP数量

@@ -14,7 +14,7 @@ use juliang\api\Users;
  * userId和key请填写您的实际账号ID和key
  * 获取地址：http://www.juliangip.com/users/profile
  */
-$userClient = new Users("1000004", "514a59cca7f5481ba4d7a817a866328c");
+$userClient = new Users("", "");
 
 
 /**

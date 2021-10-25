@@ -1,6 +1,6 @@
 <?php
 /**
- * Power by 湖北齐天网络科技有限公司
+ * Power by 湖北巨量云科技有限公司
  * Author: xiaohuoban
  * Create Date: 2021/10/23 3:01 下午
  *

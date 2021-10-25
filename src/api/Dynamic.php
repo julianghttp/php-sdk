@@ -98,22 +98,22 @@ class Dynamic {
     {
         switch ($action) {
             case self::GET_IPS_ACTION:
-                $apiUrl = "http://v1.api.juliangip.com/v1/dynamic/getips";
+                $apiUrl = "https://v1.api.juliangip.com/dynamic/getips";
                 break;
             case self::SET_WHITE_IP_ACTION:
-                $apiUrl = "http://v1.api.juliangip.com/v1/dynamic/setwhiteip";
+                $apiUrl = "https://v1.api.juliangip.com/dynamic/setwhiteip";
                 break;
             case self::GET_WHITE_IP_ACTION:
-                $apiUrl = "http://v1.api.juliangip.com/v1/dynamic/getwhiteip";
+                $apiUrl = "https://v1.api.juliangip.com/dynamic/getwhiteip";
                 break;
             case self::PROXY_CHECK_ACTION:
-                $apiUrl = "http://v1.api.juliangip.com/v1/dynamic/check";
+                $apiUrl = "https://v1.api.juliangip.com/dynamic/check";
                 break;
             case self::GET_PROXY_REMAIN:
-                $apiUrl = "http://v1.api.juliangip.com/v1/dynamic/remain";
+                $apiUrl = "https://v1.api.juliangip.com/dynamic/remain";
                 break;
             case self::GET_PROXY_BALANCE:
-                $apiUrl = "http://v1.api.juliangip.com/v1/dynamic/balance";
+                $apiUrl = "https://v1.api.juliangip.com/dynamic/balance";
                 break;
             default:
                 $apiUrl = "";

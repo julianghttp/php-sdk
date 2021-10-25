@@ -72,13 +72,13 @@ class Alone {
     {
         switch ($action) {
             case self::GET_IPS_ACTION:
-                $apiUrl = "http://v1.api.juliangip.com/v1/alone/getips";
+                $apiUrl = "https://v1.api.juliangip.com/alone/getips";
                 break;
             case self::SET_WHITE_IP_ACTION:
-                $apiUrl = "http://v1.api.juliangip.com/v1/alone/setwhiteip";
+                $apiUrl = "https://v1.api.juliangip.com/alone/setwhiteip";
                 break;
             case self::GET_WHITE_IP_ACTION:
-                $apiUrl = "http://v1.api.juliangip.com/v1/alone/getwhiteip";
+                $apiUrl = "https://v1.api.juliangip.com/alone/getwhiteip";
                 break;
             default:
                 $apiUrl = "";

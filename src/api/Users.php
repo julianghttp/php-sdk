@@ -61,7 +61,7 @@ class Users {
     {
         switch ($action) {
             case self::GET_BALANCE_ACTION:
-                $apiUrl = "http://v1.api.juliangip.com/v1/users/getbalance";
+                $apiUrl = "https://v1.api.juliangip.com/users/getbalance";
                 break;
             default:
                 $apiUrl = "";

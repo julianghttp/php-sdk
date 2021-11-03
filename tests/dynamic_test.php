@@ -56,6 +56,7 @@ $getIpsParams = [
 /**
  * 获取动态代理信息
  * 返回值格式为：Json
+ * 文档地址：https://www.juliangip.com/help/api/dynamic/
  */
 // $getIpsResult = $dynamicClient->action($dynamicClient::GET_IPS_ACTION, $getIpsParams, "POST");
 // 查看结果
@@ -65,6 +66,7 @@ $getIpsParams = [
 /**
  * 设置IP白名单
  * 返回值格式为：Json
+ * 文档地址：https://www.juliangip.com/help/api/dynamic/setwhiteip/
  */
 // $setWhiteIpParams = [
 //     "ips"   =>  "7.7.7.7,8.8.8.8"
@@ -75,6 +77,7 @@ $getIpsParams = [
 /**
  * 获取IP白名单
  * 返回值格式为：Json
+ * 文档地址：https://www.juliangip.com/help/api/dynamic/getwhiteip/
  */
 //$getWhiteIpResult = $dynamicClient->action($dynamicClient::GET_WHITE_IP_ACTION);
 //var_dump($getWhiteIpResult);
@@ -82,6 +85,7 @@ $getIpsParams = [
 /**
  * 检查代理有效性
  * 返回值格式为：Json
+ * 文档地址：https://www.juliangip.com/help/api/dynamic/check/
  */
 //$checkParams = [
 //    'proxy'   =>  "120.11.149.170:35194,110.244.145.107:55628"
@@ -92,6 +96,7 @@ $getIpsParams = [
 /**
  * 获取代理IP剩余可用时长
  * 返回值格式为：Json
+ * 文档地址：https://www.juliangip.com/help/api/dynamic/remain/
  */
 //$remainParams = [
 //    'proxy'   =>  "120.11.149.170:35194,110.244.145.107:55628"
@@ -102,6 +107,23 @@ $getIpsParams = [
 /**
  * 获取业务剩余可提取IP数量
  * 返回值格式为：Json
+ * 文档地址：https://www.juliangip.com/help/api/dynamic/balance/
  */
 //$getProxyBalanceResult = $dynamicClient->action($dynamicClient::GET_PROXY_BALANCE);
 //var_dump($getProxyBalanceResult);
+
+/**
+ * 替换授权IP白名单
+ * 返回值格式：Json
+ * 文档地址：https://www.juliangip.com/help/api/dynamic/replaceWhiteIp/
+ */
+$replaceParams = [
+    // 替换的白名单IP
+    'new_ip'    =>  "8.8.8.8,9.9.9.9",
+    //  被替换的白名单IP
+    'old_ip'    =>  "7.7.7.7,8.8.8.8",
+    // 是否重置白名单（不带此参数代表不重置已经存在的白名单）
+    'reset'     =>  1,
+];
+$replaceResult = $dynamicClient->action($dynamicClient::REPLACE_WHITE_IP_ACTION);
+var_dump($replaceResult);

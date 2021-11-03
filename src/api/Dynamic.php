@@ -37,6 +37,11 @@ class Dynamic {
     CONST GET_WHITE_IP_ACTION = "getWhiteIp";
 
     /**
+     * 替换IP白名单
+     */
+    CONST REPLACE_WHITE_IP_ACTION = "replaceWhiteIp";
+
+    /**
      * 校验代理有效性
      */
     CONST PROXY_CHECK_ACTION = "check";
@@ -114,6 +119,9 @@ class Dynamic {
                 break;
             case self::GET_PROXY_BALANCE:
                 $apiUrl = "https://v1.api.juliangip.com/dynamic/balance";
+                break;
+            case self::REPLACE_WHITE_IP_ACTION:
+                $apiUrl = "https://v1.api.juliangip.com/dynamic/replaceWhiteIp";
                 break;
             default:
                 $apiUrl = "";

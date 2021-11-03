@@ -19,14 +19,25 @@ class Alone {
     // 业务密钥
     private $key;
 
-    // 获取代理信息操作
+    /**
+     * 获取代理信息操作
+     */
     CONST GET_IPS_ACTION = "getIps";
 
-    // 设置IP白名单操作
+    /**
+     * 设置IP白名单操作
+     */
     CONST SET_WHITE_IP_ACTION = "setWhiteIp";
 
-    // 获取IP白名单
+    /**
+     * 获取IP白名单
+     */
     CONST GET_WHITE_IP_ACTION = "getWhiteIp";
+
+    /**
+     * 替换IP白名单
+     */
+    CONST REPLACE_WHITE_IP_ACTION = "replaceWhiteIp";
 
     /**
      * 获取独享代理信息初始化
@@ -79,6 +90,9 @@ class Alone {
                 break;
             case self::GET_WHITE_IP_ACTION:
                 $apiUrl = "https://v1.api.juliangip.com/alone/getwhiteip";
+                break;
+            case self::REPLACE_WHITE_IP_ACTION:
+                $apiUrl = "https://v1.api.juliangip.com/alone/replaceWhiteIp";
                 break;
             default:
                 $apiUrl = "";

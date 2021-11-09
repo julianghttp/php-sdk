@@ -125,5 +125,5 @@ $replaceParams = [
     // 是否重置白名单（不带此参数代表不重置已经存在的白名单）
     'reset'     =>  1,
 ];
-$replaceResult = $dynamicClient->action($dynamicClient::REPLACE_WHITE_IP_ACTION);
+$replaceResult = $dynamicClient->action($dynamicClient::REPLACE_WHITE_IP_ACTION, $replaceParams);
 var_dump($replaceResult);
